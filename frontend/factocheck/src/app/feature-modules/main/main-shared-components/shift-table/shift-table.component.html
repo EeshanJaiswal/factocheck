@@ -1,0 +1,120 @@
+<div class="container-fluid shifts-table p-2">
+    <div class="table-responsive">
+        <table class="table table-striped text-style">
+            <thead>
+              <tr>
+                <th class="custom-table" scope="col"></th>
+                <th scope="col" *ngFor="let shift of shift_array">{{shift}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Fill Volume All Valves <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><input type="text" class="form-control"                 
+                    [disabled]="indx !== shiftNowIndex? true: false" ></td>       
+              </tr>
+              <tr>
+                <th scope="row">Fill Volume 3 valves every Hour <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><input type="text" class="form-control"                 
+                    [disabled]="indx !== shiftNowIndex? true: false" ></td>    
+              </tr>
+              <tr>
+                <th scope="row">Closure Torque <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Closure - Jump test <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Closure - Pilfer band <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Closure - Secure seal <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Stress crack test <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Drop test <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><ng-toggle
+                    [value]="true"
+                    [color]="{
+                      unchecked: 'rgb(61,163,2)',
+                      checked: 'rgb(255,102,0)'
+                    }"                    
+                    [disabled]="indx !== shiftNowIndex? true: false"
+                  ></ng-toggle></td> 
+              </tr>
+              <tr>
+                <th scope="row">Package appearance <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><input type="text" class="form-control"                 
+                    [disabled]="indx !== shiftNowIndex? true: false" ></td>  
+              </tr>
+              <tr>
+                <th scope="row">Date coding and rub test <svg-icon [src]="config.infoIcon" [svgStyle]="{ 'width.px':20 , 'fill':'rgb(155,149,211)' }"></svg-icon></th>
+                <td *ngFor="let indx of index_map"><input type="text" class="form-control"                 
+                    [disabled]="indx !== shiftNowIndex? true: false" ></td>  
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+    <!-- <div class="d-flex flex-nowrap">
+        <div class="shift-table-row-head">Test 1</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+        <div class="shift-box">test</div>
+    </div> -->
+</div>
